@@ -1,5 +1,8 @@
 <html>
     <head>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -16,4 +19,23 @@
 
         <script src="app.js"></script>
     </body>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCq4BhxzkiVmDDA2uxJ0NTw5-AB_Qg9-RY",
+            authDomain: "skourse.firebaseapp.com",
+            databaseURL: "https://skourse.firebaseio.com",
+            projectId: "skourse",
+            storageBucket: "skourse.appspot.com",
+            messagingSenderId: "386035099363",
+            appId: "1:386035099363:web:4689b976785b8ceead87d6"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestrore()
+        db.settings({ timestampsInSnapshots: true})
+    </script>
 </html>
